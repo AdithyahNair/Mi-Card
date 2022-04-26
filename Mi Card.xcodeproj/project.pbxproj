@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1415F20A2818237500F4DAF5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415F2092818237500F4DAF5 /* K.swift */; };
+		14C6BB5E28178E77003E41BA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C6BB5D28178E77003E41BA /* DetailView.swift */; };
+		14C6BB602817914C003E41BA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C6BB5F2817914C003E41BA /* InfoView.swift */; };
 		14E89B8B2817856B00F1CACB /* Mi_CardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E89B8A2817856B00F1CACB /* Mi_CardApp.swift */; };
 		14E89B8D2817856B00F1CACB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E89B8C2817856B00F1CACB /* ContentView.swift */; };
 		14E89B8F2817856C00F1CACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E89B8E2817856C00F1CACB /* Assets.xcassets */; };
 		14E89B922817856C00F1CACB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E89B912817856C00F1CACB /* Preview Assets.xcassets */; };
+		14E89B9A281786C400F1CACB /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14E89B99281786C400F1CACB /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1415F2092818237500F4DAF5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		14C6BB5D28178E77003E41BA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		14C6BB5F2817914C003E41BA /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		14E89B872817856B00F1CACB /* Mi Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E89B8A2817856B00F1CACB /* Mi_CardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mi_CardApp.swift; sourceTree = "<group>"; };
 		14E89B8C2817856B00F1CACB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14E89B8E2817856C00F1CACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E89B912817856C00F1CACB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14E89B98281786A300F1CACB /* Mi-Card-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mi-Card-Info.plist"; sourceTree = SOURCE_ROOT; };
+		14E89B99281786C400F1CACB /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14C6BB5B28178E43003E41BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C6BB5D28178E77003E41BA /* DetailView.swift */,
+				14C6BB5F2817914C003E41BA /* InfoView.swift */,
+				1415F2092818237500F4DAF5 /* K.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C6BB5C28178E57003E41BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14E89B8C2817856B00F1CACB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14E89B7E2817856B00F1CACB = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +78,11 @@
 		14E89B892817856B00F1CACB /* Mi Card */ = {
 			isa = PBXGroup;
 			children = (
+				14E89B98281786A300F1CACB /* Mi-Card-Info.plist */,
 				14E89B8A2817856B00F1CACB /* Mi_CardApp.swift */,
-				14E89B8C2817856B00F1CACB /* ContentView.swift */,
-				14E89B8E2817856C00F1CACB /* Assets.xcassets */,
+				14C6BB5B28178E43003E41BA /* Model */,
+				14C6BB5C28178E57003E41BA /* View */,
+				14E89B9C281786D000F1CACB /* Supporting Files */,
 				14E89B902817856C00F1CACB /* Preview Content */,
 			);
 			path = "Mi Card";
@@ -65,6 +94,23 @@
 				14E89B912817856C00F1CACB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14E89B9B281786C900F1CACB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				14E89B99281786C400F1CACB /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		14E89B9C281786D000F1CACB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E89B9B281786C900F1CACB /* Fonts */,
+				14E89B8E2817856C00F1CACB /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E89B9A281786C400F1CACB /* Pacifico-Regular.ttf in Resources */,
 				14E89B922817856C00F1CACB /* Preview Assets.xcassets in Resources */,
 				14E89B8F2817856C00F1CACB /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C6BB602817914C003E41BA /* InfoView.swift in Sources */,
+				1415F20A2818237500F4DAF5 /* K.swift in Sources */,
 				14E89B8D2817856B00F1CACB /* ContentView.swift in Sources */,
+				14C6BB5E28178E77003E41BA /* DetailView.swift in Sources */,
 				14E89B8B2817856B00F1CACB /* Mi_CardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,14 +314,15 @@
 		14E89B962817856C00F1CACB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mi Card/Preview Content\"";
 				DEVELOPMENT_TEAM = 873GG57D8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mi-Card-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,14 +344,15 @@
 		14E89B972817856C00F1CACB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mi Card/Preview Content\"";
 				DEVELOPMENT_TEAM = 873GG57D8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mi-Card-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
